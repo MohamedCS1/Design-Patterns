@@ -12,6 +12,7 @@ class Editor {
     {
         this.content = content
     }
+
     fun createState():EditorState
     {
         return EditorState(content)
