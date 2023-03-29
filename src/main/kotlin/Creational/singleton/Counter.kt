@@ -1,4 +1,4 @@
-package creational.singleton
+package Creational.singleton
 
 object Counter {
     var counter = 0

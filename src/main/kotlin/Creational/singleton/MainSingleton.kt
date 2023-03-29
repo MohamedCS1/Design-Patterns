@@ -1,4 +1,4 @@
-package creational.singleton
+package Creational.singleton
 
 fun main() {
 
