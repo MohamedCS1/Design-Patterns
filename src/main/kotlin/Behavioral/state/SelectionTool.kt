@@ -1,6 +1,6 @@
-package state
+package Behavioral.state
 
-class SelectionTool:Tool {
+class SelectionTool: Tool {
     override fun mouseUp() {
         println("Selection icon")
     }

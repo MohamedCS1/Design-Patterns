@@ -1,4 +1,4 @@
-package state
+package Behavioral.state
 
 fun main() {
     val canvas = Canvas()

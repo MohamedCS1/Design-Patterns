@@ -1,8 +1,8 @@
-package state
+package Behavioral.state
 
 class Canvas {
 
-    private lateinit var currentTool:Tool
+    private lateinit var currentTool: Tool
 
     fun mouseUp()
     {
@@ -19,7 +19,7 @@ class Canvas {
         this.currentTool = tool
     }
 
-    fun getCurrentTool():Tool
+    fun getCurrentTool(): Tool
     {
         return this.currentTool
     }

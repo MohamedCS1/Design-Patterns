@@ -1,6 +1,6 @@
-package state
+package Behavioral.state
 
-class BrushTool:Tool {
+class BrushTool: Tool {
     override fun mouseUp() {
         println("Brush icon")
     }

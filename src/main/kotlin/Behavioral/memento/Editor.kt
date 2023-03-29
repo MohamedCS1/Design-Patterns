@@ -1,19 +1,19 @@
-package memento
+package Behavioral.memento
 
 class Editor {
-    private var content:String = ""
+    private lateinit var content: Content
 
-    fun getContent():String
+    fun getContent(): Content
     {
         return content
     }
 
-    fun setContent(content:String)
+    fun setContent(content: Content)
     {
         this.content = content
     }
 
-    fun createState():EditorState
+    fun createState(): EditorState
     {
         return EditorState(content)
     }
