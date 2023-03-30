@@ -7,12 +7,10 @@ class TempEmployee:EmployeePrototype() {
     }
 
     override fun deepCopy(): EmployeePrototype {
-        var tempEmployee = TempEmployee()
-        tempEmployee = this.shallowCopy() as TempEmployee
-        tempEmployee.address.apply {
-            Address(this!!.building ,this.street ,this.city)
-        }
+        val tempEmployee = TempEmployee()
+        tempEmployee.id = this.id
         tempEmployee.name = this.name
+        tempEmployee.address = this.address?.copy()
         return tempEmployee
     }
 }

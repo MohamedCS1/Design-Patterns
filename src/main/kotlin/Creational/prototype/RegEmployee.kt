@@ -6,12 +6,11 @@ class RegEmployee: EmployeePrototype() {
     }
 
     override fun deepCopy(): EmployeePrototype {
-        var regEmployee = RegEmployee()
-        regEmployee = this
-        regEmployee.address.apply {
-            Address(this!!.building ,this.street ,this.city)
-        }
+        val regEmployee = RegEmployee()
+        regEmployee.id = this.id
         regEmployee.name = this.name
+        regEmployee.address = this.address?.copy()
         return regEmployee
+
     }
 }
