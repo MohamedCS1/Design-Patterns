@@ -1,2 +1,5 @@
-﻿# Design-Patterns
-// TODO
+# Design-Patterns
+
+* Creational Patterns
+* Structural Patterns
+* Behavioral Patterns
