@@ -12,4 +12,15 @@ class CurrencyFactory:CurrencyMethods {
             }
         }
     }
+
+    override fun cryptoCurrency(name: CryptoCurrencyNames): CryptoCurrency {
+        when (name)
+        {
+            CryptoCurrencyNames.BITCOIN -> return Bitcoin()
+            CryptoCurrencyNames.DOGE -> return Dogecoin()
+            else -> {
+                return InvalidCryptoCurrency()
+            }
+        }
+    }
 }
