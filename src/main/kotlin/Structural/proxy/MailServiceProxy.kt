@@ -18,4 +18,5 @@ class MailServiceProxy {
         MailService().sendMail()
         return "Email send it"
     }
+
 }

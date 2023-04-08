@@ -1,7 +1,7 @@
 package Structural.proxy
 
-class MailService: MailServiceInterface() {
+class MailService:MailServiceInterface() {
     override fun sendMail(): String {
-        return "send it"
+        return "mail send it"
     }
 }

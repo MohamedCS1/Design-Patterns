@@ -1,7 +1,7 @@
 package Structural.proxy
 
 fun main() {
-    val mailServiceProxy = MailService()
+    val mailServiceProxy = MailServiceProxy()
 
 
     println(mailServiceProxy.sendMail())
