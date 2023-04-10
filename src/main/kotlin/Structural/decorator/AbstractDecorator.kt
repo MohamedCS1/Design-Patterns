@@ -1,13 +1,13 @@
 package Structural.decorator
 
+import Structural.proxy.MailService
 
-import Structural.proxy.MailServiceInterface
 
-abstract class AbstractDecorator:MailServiceInterface() {
+abstract class AbstractDecorator: MailService() {
 
-    private lateinit var smsService:MailServiceInterface
+    private lateinit var smsService:MailService
 
-    fun setService(service: MailServiceInterface)
+    fun setService(service: MailService)
     {
         smsService = service
     }

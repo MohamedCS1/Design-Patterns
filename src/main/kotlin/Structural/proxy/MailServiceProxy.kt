@@ -15,7 +15,7 @@ class MailServiceProxy {
         {
             return "The email not send"
         }
-        MailService().sendMail()
+        ConcreteMailService().sendMail()
         return "Email send it"
     }
 

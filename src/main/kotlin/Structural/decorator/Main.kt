@@ -1,9 +1,9 @@
 package Structural.decorator
 
-import Structural.proxy.MailService
+import Structural.proxy.ConcreteMailService
 
 fun main() {
-    val mailService = MailService()
+    val mailService = ConcreteMailService()
 
     val smsDecorator = SmsDecorator()
     smsDecorator.setService(mailService)
