@@ -1,4 +1,3 @@
 package Structural.composite
 
-class TextView {
-}
+class TextView(override val name: String) : Component

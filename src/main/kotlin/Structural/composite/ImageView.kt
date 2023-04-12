@@ -1,4 +1,3 @@
 package Structural.composite
 
-class ImageView {
-}
+class ImageView(override val name: String) : Component

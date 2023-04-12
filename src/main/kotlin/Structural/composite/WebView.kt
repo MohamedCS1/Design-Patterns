@@ -1,4 +1,3 @@
 package Structural.composite
 
-class WebView {
-}
+class WebView(override val name: String) : Component
