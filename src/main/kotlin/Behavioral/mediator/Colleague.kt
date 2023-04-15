@@ -5,6 +5,5 @@ abstract class Colleague(private var mediator:Mediator) {
     {
         mediator.notify(this ,event)
     }
-
     abstract fun receive(event:String)
 }
